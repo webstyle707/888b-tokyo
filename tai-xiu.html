@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="icon" href="./images/logotitle.jpg">
+    <title>Tài xỉu</title>
+  </head>
+  <body class="bg-[#1A1818]">
+   <!-- navbar -->
+   <div
+   class="widht h-screen fixed z-30 lg:hidden bg-gray-700 inset-0 bg-opacity-70"
+ >
+   <div
+     onclick="handleHide()"
+     class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+   >
+     <svg
+       xmlns="http://www.w3.org/2000/svg"
+       fill="none"
+       viewBox="0 0 24 24"
+       stroke-width="1.5"
+       stroke="currentColor"
+       class="size-6"
+     >
+       <path
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         d="M6 18 18 6M6 6l12 12"
+       />
+     </svg>
+   </div>
+
+   <div class="w-[65%] md:w-[34%] h-full bg-[#0D1221]">
+     <div class="flex items-center pt-16 pl-5">
+       <input
+         placeholder="Seach..."
+         type="search"
+         class="text-gray-600 h-10 w-8/12 px-2 focus:outline-none bg-white"
+       />
+       <a href="https://www.hay88.one/?inviteCode=7599813">
+         <div
+           class="w-10 h-10 bg-orange-400 flex items-center justify-center text-2xl"
+         >
+           <ion-icon class="text-white" name="search-outline"></ion-icon>
+         </div>
+       </a>
+     </div>
+
+     <ul class="font-semibold text-gray-600 *:text-white pt-3">
+       <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+         <a href="https://www.hay88.one/?inviteCode=7599813"> 888B </a>
+       </li>
+       <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+         <a href="https://www.hay88.one/?inviteCode=7599813">
+           TẢI APP 888B
+         </a>
+       </li>
+       <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+         <a href="https://www.hay88.one/?inviteCode=7599813">
+           HƯỚNG DẪN
+         </a>
+       </li>
+       <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+         <a href="https://www.hay88.one/?inviteCode=7599813">
+           KHUYẾN MẠI
+         </a>
+       </li>
+       <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+         <a href="https://www.hay88.one/?inviteCode=7599813">
+           CASINO ONLINE
+         </a>
+       </li>
+       <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+         <a href="https://www.hay88.one/?inviteCode=7599813">
+           SLOT GAME
+         </a>
+       </li>
+     </ul>
+
+     <div
+       class="pt-5 flex space-x-3 items-center *:text-2xl text-white pl-4"
+     >
+       <ion-icon name="logo-facebook"></ion-icon>
+       <ion-icon name="logo-twitter"></ion-icon>
+       <ion-icon name="mail-outline"></ion-icon>
+       <ion-icon name="logo-instagram"></ion-icon>
+     </div>
+   </div>
+ </div>
+
+ <!-- header -->
+ <div class="fixed w-full z-10">
+   <div class="bg-[#141414] hidden lg:block lg:px-4 xl:px-0">
+     <div
+       class="max-w-[1050px] mx-auto flex justify-between items-center py-[2px]"
+     >
+       <div class="font-bold text-white text-xs">
+         <h1>TRẢI NGHIỆM CHẤT LƯỢNG HÀNG ĐẦU!</h1>
+       </div>
+       <div class="flex space-x-4 items-center py-[2px]">
+         <a href="https://www.hay88.one/?inviteCode=7599813">
+           <button
+             class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+           >
+             + ĐĂNG KÝ
+           </button>
+         </a>
+
+         <a href="https://www.hay88.one/?inviteCode=7599813">
+           <button
+             class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+           >
+             ĐĂNG NHẬP
+           </button>
+         </a>
+       </div>
+     </div>
+   </div>
+
+   <div class="bg-[#191919] hidden lg:block lg:px-4 xl:px-0">
+     <div
+       class="max-w-[1050px] mx-auto flex justify-between items-center py-2"
+     >
+       <div>
+         <img class="w-40" src="./images/logo.webp" alt="" />
+       </div>
+       <div class="*:font-bold space-x-4">
+         <a href="https://www.hay88.one/?inviteCode=7599813" class="text-white"> 888B </a>
+         <a
+           href="https://www.hay88.one/?inviteCode=7599813"
+           class="hover:text-white text-gray-300 transition-all duration-100"
+         >
+           TẢI APP 888B
+         </a>
+         <a
+           href="https://www.hay88.one/?inviteCode=7599813"
+           class="hover:text-white text-gray-300 transition-all duration-100"
+         >
+           HƯỚNG DẪN
+         </a>
+         <a
+           href="https://www.hay88.one/?inviteCode=7599813"
+           class="hover:text-white text-gray-300 transition-all duration-100"
+         >
+           KHUYẾN MẠI
+         </a>
+         <a
+           href="https://www.hay88.one/?inviteCode=7599813"
+           class="hover:text-white text-gray-300 transition-all duration-100"
+         >
+           CASINO ONLINE
+         </a>
+         <a
+           href="https://www.hay88.one/?inviteCode=7599813"
+           class="hover:text-white text-gray-300 transition-all duration-100"
+         >
+           SLOT GAME
+         </a>
+       </div>
+     </div>
+   </div>
+
+   <!-- sm menu -->
+   <div class="w-full lg:hidden">
+     <div
+       class="flex space-x-4 items-center justify-center py-[6px] bg-[#141414]"
+     >
+       <a href="https://www.hay88.one/?inviteCode=7599813">
+         <button
+           class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+         >
+           + ĐĂNG KÝ
+         </button>
+       </a>
+
+       <a href="https://www.hay88.one/?inviteCode=7599813">
+         <button
+           class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+         >
+           ĐĂNG NHẬP
+         </button>
+       </a>
+     </div>
+
+     <div
+       class="text-white flex justify-between items-center px-4 py-2 bg-[#191919]"
+     >
+       <!-- clickNav -->
+       <div onclick="handleShow()" class="text-3xl">
+         <ion-icon name="menu-outline"></ion-icon>
+       </div>
+       <div><img class="w-44" src="./images/logo.webp" alt="" /></div>
+       <div class="pl-8"></div>
+     </div>
+   </div>
+ </div>
+
+    <!-- container -->
+    <div
+      class="text-white max-w-[1050px] mx-auto py-6 pb-24 space-y-10 px-4 xl:px-0 pt-36"
+    >
+      <div class="w-full lg:flex">
+        <div class="w-full lg:w-[76%] lg:border-r border-gray-300 space-y-6">
+          <div class="flex flex-col items-center justify-center space-y-4 lg:pr-8">
+            <p class="font-bold text-xs text-gray-300">CASINO ONLINE</p>
+            <h1 class="font-bold text-xl md:text-2xl px-10 md:px-0 text-center">
+              Tài xỉu là gì ? Luật chơi, cách chơi tài xỉu giỏi
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-xs text-gray-300 uppercase">
+              POSTED ON THÁNG MỘT 13, 2023 BY QUẢN TRỊ WEB
+            </p>
+
+
+            <div>
+              <img class="w-full" src="./images/taixiu.jpg" alt="" />
+            </div>
+
+            
+
+            <p>
+              <span class="font-bold">Tài xỉu </span> được rất nhiều người mến
+              mộ và tham gia bởi chúng có sức hấp dẫn lớn. Quy định không quá
+              gắt gao mà tiền thưởng lại lớn. Chính vì thế, nếu như bạn đang
+              muốn thử sức các trò chơi game online tuyệt đỉnh thì đây chính là
+              lựa chọn tuyệt vời. <span class="font-bold">888B</span> mang tới
+              cho bạn luật chơi cũng như kinh nghiệm đánh tài xỉu luôn thắng.
+            </p>
+          </div>
+
+
+        
+
+          <div class="pt-5 lg:pr-8 space-y-6">
+
+            
+
+
+            
+            <div class="bg-[#232323] w-[85%] md:w-[45%] lg:w-[45%] p-4 space-y-2">
+              <h4 class="text-[#F2B437] font-bold">
+                Danh mục [<span class="font-normal text-xs"> ẩn </span>]
+              </h4>
+
+              <ul class="space-y-2 text-[#F2B437] text-sm">
+                <li class="">1 Tài Xỉu là gì ?</li>
+                <li>2 Luật chơi tài xỉu mới nhất 2020</li>
+                <li class="space-y-2">
+                  <p>3 Phân loại cược tài xỉu</p>
+                  <div class="space-y-2 pl-4">
+                    <p>3.1 Cược Tài / Xỉu</p>
+                    <p>3.2 Cược 1 số</p>
+                    <p>3.3 Cược tổng điểm 3 viên xúc xắc</p>
+                    <p>3.4 Cược Chẵn / Lẻ</p>
+                  </div>
+                </li>
+
+                <li class="space-y-2">
+                  <p>4 Cách chơi tài xỉu giỏi từ chuyên gia 888B</p>
+                  <div class="space-y-2 pl-4">
+                    <p>4.1 Cân đối tài chính và thời gian</p>
+                    <p>4.2 Học hỏi kinh nghiệm của người đi trước</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Tài Xỉu là gì ?
+            </h1>
+
+            <div>
+              <p>Tài Xỉu là gì ?</p>
+              <p>Tài Xỉu 888B</p>
+              <p>
+                Tài Xỉu vốn là trò chơi được xuất phát từ đất nước Trung Hoa.
+                Khi tới các quốc gia trên thế giới, trò chơi này mới thực sự
+                mạnh mẽ. Cho tới lúc về Việt Nam, đây gần như là game online
+                chiếm ưu thế lớn. Cộng đồng game yêu thích tài xỉu rất lớn và
+                tạo ra một hứng thế hừng hực, khiến ai cũng muốn ít nhất được
+                một lần tham gia.
+              </p>
+            </div>
+
+            <p>
+              Tài Xỉu vốn là trò chơi được xuất phát từ đất nước Trung Hoa. Khi
+              tới các quốc gia trên thế giới, trò chơi này mới thực sự mạnh mẽ.
+              Cho tới lúc về Việt Nam, đây gần như là game online chiếm ưu thế
+              lớn. Cộng đồng game yêu thích tài xỉu rất lớn và tạo ra một hứng
+              thế hừng hực, khiến ai cũng muốn ít nhất được một lần tham gia.
+            </p>
+
+            <p>
+              Cách gọi khác của bộ game tài xỉu này là sicbo. Chúng được đưa ra
+              nhiều biến thể nhưng những luật chơi chung vẫn được giữ nguyên.
+              Chính vì thế, các bạn nên nắm chắc các điều dưới đây để có thể
+              chơi tài xỉu được chuẩn chỉnh nhất có thể.
+            </p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Luật chơi tài xỉu mới nhất 2020
+            </h1>
+
+            <p>
+              Tài xỉu là một trong những trò chơi không quá khó. Chúng được
+              thiết lập chủ yếu từ 3 viên xúc xắc và đặt trong một thiết bị lắc.
+              Đối với trò chơi online, thiết bị đó có thể là ống hoặc bát. Đối
+              với trò chơi online, thiết bị được mô hình hóa và thiết lập sẵn
+              trên hệ thống. Chỉ cần ra lệnh là dealer sẽ tiến hành thực hiện
+              hành vi này.
+            </p>
+
+            <p>
+              Với lợi thế như vậy, khi chơi tài xỉu online, bạn sẽ không mất
+              thời gian đi lại, hạn chế tối đa những thủ thuật khi chơi của
+              những thành viên không chân chính. Chỉ cần ngồi tại nhà, tìm tới
+              nhà cái uy tín là có thể tham gia ngay vào trò chơi đầy thú vị
+              này. Quá hay phải không? Hãy tham gia ngay để vừa được xả stress
+              vừa có cơ hội kiếm tiền.
+            </p>
+
+            <p>
+              Nhiều người chỉ cần nắm chắc luật chơi trên, kết hợp với sự may
+              mắn đã mang về tiền thưởng vô cùng lớn, mua nhà lầu xe hơi. Cuộc
+              sống được thay đổi từ những trò chơi cực giản đơn mà thú vị như
+              thế này.
+            </p>
+
+            <p>
+              Đi sâu hơn về luật chơi, trong tài xỉu, người chơi chỉ có 2 lựa
+              chọn. Đó là tiến hành đặt cược chẵn hoặc lẻ. Tổng của 3 viên xúc
+              xắc như thế nào sẽ quyết định tới thắng thua của bạn. Chính vì
+              thế, trước khi đặt cược, bạn nên tính toán cho cẩn thận nhé.
+            </p>
+
+            <p class="font-bold">Xem nhiều hơn tại: Casino Online</p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Phân loại cược tài xỉu
+            </h1>
+
+            <div>
+              <p>Phân loại cược tài xỉu</p>
+              <p>
+                Vậy Tài xỉu có những loại nào ? Dưới đây là chi tiết các loại có
+                trong bộ bôn tài xỉu – sicbo này cho anh em tìm hiểu thêm.
+              </p>
+            </div>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">Cược Tài / Xỉu</h1>
+
+            <p>
+              Đây là cách cược phổ biến nhất trong trò chơi này. Chúng được tính
+              dựa trên tổng điểm được quy đổi từ 3 viên xúc xắn. Nếu tổng đạt từ
+              11 đến 17 được tính là Tài. Nếu tổng từ 4 tới 10 sẽ được tính là
+              Xỉu. Tỷ lệ thắng thường là 1 ăn 1.
+            </p>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">Cược 1 số</h1>
+
+            <p>
+              Cách thức cược này được áp dụng để cược vào 1 con số cụ thể được
+              hiển thị trên 1 hoặc toàn bộ 3 viên xúc xắc. Người chơi thực hiện
+              cược từ 1 tới 6.
+            </p>
+
+            <ul class="list-disc pl-4 space-y-3">
+              <li>
+                Nếu như các con số cược đó của bạn có 1 hạt xí ngầu, tỉ lệ thắng
+                được tính là 1 ăn 2.
+              </li>
+              <li>
+                Nếu 2 hột xí ngầu xuất hiện, tỷ lệ ăn sẽ được áp dụng là 1 ăn 2.
+              </li>
+              <li>
+                Trong trường hợp có 3 hột, tỷ lệ ăn được quy đổi là 1 ăn 3.
+              </li>
+            </ul>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+              Cược tổng điểm 3 viên xúc xắc
+            </h1>
+
+            <p>
+              Đây cũng là cách thức đặt cược được nhiều người lựa chọn được tính
+              dựa trên chính xác tổng điểm 3 viên xúc xắc.
+            </p>
+
+            <p>
+              Bạn sẽ tiến hành đặt cược từ 4 tới 17. Mỗi số được quy định với tỷ
+              lệ thắng khác nhau tùy vào các nhà cái.
+            </p>
+
+            <p>
+              Chính vì thế, khi bắt đầu tham gia, bạn nên truy cập tới phần
+              trang thông tin chung để tìm hiểu.
+            </p>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">Cược Chẵn / Lẻ</h1>
+
+            <p>
+              Có thể nói, đây là cách đặt cược khá phổ biến hiện nay và được
+              tính dựa trên tổng điểm 3 viên xí ngầu là chẵn hay lẻ. Nếu như
+              tổng điểm 3 viên xí ngầu là chẵn bạn sẽ ăn tiền khi đặt cược chẵn.
+              Trong trường hợp đặt cược lẻ, bạn đã thua.
+            </p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Cách chơi tài xỉu giỏi từ chuyên gia 888B
+            </h1>
+
+            <div>
+              <p>Cách chơi tài xỉu giỏi từ chuyên gia 888B</p>
+              <p>
+                Với những người mới, cách chơi tài xỉu giỏi là chủ đề được tìm
+                kiếm. Mà với những ai đã chơi lâu thì cũng đều phải đi tìm những
+                bí kíp từ chuyên gia.
+              </p>
+            </div>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+              Cân đối tài chính và thời gian
+            </h1>
+
+            <p>
+              Dựa theo thời gian, vốn, bạn sẽ đặt ra mục tiêu cân đối. Càng có
+              nhiều thời gian, vốn lớn thì cơ hội chiến thắng sẽ càng cao. Tuy
+              nhiên, những người mới tham gia nên xác định nhịp cầu lý tưởng là
+              2 tới 4.
+            </p>
+
+            <p>
+              Cụ thể, bạn chỉ nên dành ra thời gian 1 ngày chơi 2 – 4 ván. Số
+              tiền cược chỉ nên hạn định ở mức nhất định. Nếu như bạn là người
+              mới bắt đầu và chưa thực sự vững tin vào quyết định của mình thì
+              chỉ nên cược mỗi lần số tiền vừa phải. Trong khi vận may tới, bạn
+              có thể mạnh dạn cược gấp đôi để nâng cao tối đa cơ hội chiến thắng
+              lớn cho mình.
+            </p>
+
+            <p class="font-bold">Xem thêm: Ngầu Hầm</p>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+              Học hỏi kinh nghiệm của người đi trước
+            </h1>
+
+            <p>
+              Các siêu cao thủ luôn có những hướng đi chơi tài xỉu rất tốt. Bạn
+              nên tham khảo để áp dụng nhé. Các diễn đàn chính là nơi hội tụ các
+              tay cao thủ trong làng game. Bạn nên tham gia để có dịp cùng chia
+              sẻ, học hỏi và trao đổi những thắc mắc của mình. Đây sẽ là tiền đề
+              tốt để bạn có được hướng chơi tài xỉu tốt hơn.
+            </p>
+
+            <p>
+              Chắc chắn khi bạn nắm bắt được các quy định, cách chơi hay trên,
+              bạn sẽ có nhiều cơ hội thắng lớn khi chơi tài xỉu.
+            </p>
+
+            <!-- line containt -->
+
+            <div class="space-y-4">
+              <p class="mx-auto w-8 border border-gray-400"></p>
+              <div class="flex items-center justify-center space-x-4">
+                <ion-icon
+                  name="logo-facebook"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-twitter"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-linkedin"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-pinterest"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="mail-outline"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <div
+                class="py-3 w-full border-b border-t text-center text-sm border-gray-400"
+              >
+                This entry was posted in Casino Online. Bookmark the permalink.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-[24%] space-y-4 lg:pl-8">
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Posts
+          </h1>
+
+          <p>Bật mí cách hoá giải vận đen hiệu quả trong cá độ online</p>
+
+          <p>Cách bắn cá thắng dễ hiểu và nhanh nhất để giành chiến thắng</p>
+
+          <p>Giải mã: mơ thấy mưa là điềm gì, tốt hay xấu? Số liên quan</p>
+
+          <p>Hướng dẫn cách chơi cá độ bóng đá từ A đến Z cho người mới</p>
+
+          <p>Tổng hợp các cách chơi bắn cá phát lộc hiệu quả tại 888B</p>
+
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Comments
+          </h1>
+
+          <p>Không có bình luận nào để hiển thị.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-[#0F4270] py-8">
+      <div
+        class="text-white max-w-[1050px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-9 px-4 xl:px-0"
+      >
+        <div class="space-y-2">
+          <h1 class="font-bold">GIỚI THIỆU VỀ 888B</h1>
+
+          <p class="w-7 border border-gray-400"></p>
+
+          <p class="pt-1">
+            888b – Nhà cái uy tín, đẳng cấp nhất châu Á năm 2024. Đăng ký hội
+            viên 888b tại trang web chính thức: 888b.tokyo nhận nhiều ưu đãi, hỗ
+            trợ 24/7 và nhiều phần quá giá trị đang chờ bạn.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THEO DÕI 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Youtube</p>
+          <p class="pt-1">Pinterest</p>
+          <p class="pt-1">Vimeo</p>
+          <p class="pt-1">Flickr</p>
+          <p class="pt-1">Linkedin</p>
+          <p class="pt-1">Tumblr</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THÔNG TIN VỀ 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Giới thiệu</p>
+          <p class="pt-1">Chính sách</p>
+          <p class="pt-1">Điều khoản</p>
+          <p class="pt-1">Cá cược có trách nhiệm</p>
+          <p class="pt-1">Liên hệ</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">TỪ KHÓA TÌM KIẾM</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1"><a href="https://888b.tokyo">https://888b.tokyo</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#0A0A0A] pt-5 pb-7 space-y-6">
+      <p
+        class="font-bold text-white hover:text-red-600 transition-all duration-200 text-center text-sm"
+      >
+        Nhận mã bảo mật
+      </p>
+      <p class="text-gray-400 text-center text-sm">
+        Bản quyền thuộc về © 888b.tokyo
+      </p>
+    </div>
+
+  
+
+    <script src="./script.js"></script>
+  </body>
+</html>

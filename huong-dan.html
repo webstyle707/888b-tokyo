@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logotitle.jpg">
+    <title>Hướng dẫn - 888b</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-[#1A1818]">
+    <!-- navbar -->
+    <div
+      class="widht h-screen fixed z-30 lg:hidden bg-gray-700 inset-0 bg-opacity-70"
+    >
+      <div
+        onclick="handleHide()"
+        class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <div class="w-[65%] md:w-[34%] h-full bg-[#0D1221]">
+        <div class="flex items-center pt-16 pl-5">
+          <input
+            placeholder="Seach..."
+            type="search"
+            class="text-gray-600 h-10 w-8/12 px-2 focus:outline-none bg-white"
+          />
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <div
+              class="w-10 h-10 bg-orange-400 flex items-center justify-center text-2xl"
+            >
+              <ion-icon class="text-white" name="search-outline"></ion-icon>
+            </div>
+          </a>
+        </div>
+
+        <ul class="font-semibold text-gray-600 *:text-white pt-3">
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="./index.html"> 888B </a>
+          </li>
+
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="./tai-888b.html"> TẢI APP 888B </a>
+          </li>
+
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="./huong-dan.html"> HƯỚNG DẪN </a>
+          </li>
+
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="#"> KHUYẾN MẠI </a>
+          </li>
+
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="./casino-online.html"> CASINO ONLINE </a>
+          </li>
+
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="./slot-game.html"> SLOT GAME </a>
+          </li>
+        </ul>
+
+        <div
+          class="pt-5 flex space-x-3 items-center *:text-2xl text-white pl-4"
+        >
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="fixed w-full z-10">
+      <div class="bg-[#141414] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-[2px]"
+        >
+          <div class="font-bold text-white text-xs">
+            <h1>TRẢI NGHIỆM CHẤT LƯỢNG HÀNG ĐẦU!</h1>
+          </div>
+          <div class="flex space-x-4 items-center py-[2px]">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                + ĐĂNG KÝ
+              </button>
+            </a>
+
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                ĐĂNG NHẬP
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#191919] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-2"
+        >
+          <div>
+            <img class="w-40" src="./images/logo.webp" alt="" />
+          </div>
+          <div class="*:font-bold space-x-4">
+            <a
+              href="./index.html"
+              class="text-gray-300 hover:text-white transition-all duration-200"
+            >
+              888B
+            </a>
+
+            <a
+              href="./tai-888b.html"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              TẢI APP 888B
+            </a>
+
+            <a href="./huong-dan.html" class="text-white"> HƯỚNG DẪN </a>
+
+            <a
+              href="#"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              KHUYẾN MẠI
+            </a>
+
+            <a
+              href="./casino-online.html"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              CASINO ONLINE
+            </a>
+
+            <a
+              href="/slot-game.html"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              SLOT GAME
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- sm menu -->
+      <div class="w-full lg:hidden">
+        <div
+          class="flex space-x-4 items-center justify-center py-[6px] bg-[#141414]"
+        >
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              + ĐĂNG KÝ
+            </button>
+          </a>
+
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              ĐĂNG NHẬP
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="text-white flex justify-between items-center px-4 py-2 bg-[#191919]"
+        >
+          <!-- clickNav -->
+          <div onclick="handleShow()" class="text-3xl">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+          <div><img class="w-44" src="./images/logo.webp" alt="" /></div>
+          <div class="pl-8"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div
+      class="text-white max-w-[1050px] mx-auto py-6 pb-24 space-y-10 px-4 xl:px-0 pt-36"
+    >
+      <h1
+        class="font-bold text-xl md:text-2xl px-10 md:px-0 text-center "
+      >
+        CATEGORY ARCHIVES: HƯỚNG DẪN
+      </h1>
+
+      <div class="w-full lg:flex">
+        <div class="lg:w-[76%] lg:border-r border-gray-300 space-y-6">
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              Các kiểu đá gà phổ biến trên thế giới hiện nay
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG TƯ 10, 2024 BY TẤN NHẸ CÂN
+            </p>
+
+            <!-- img1 -->
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan1.png" alt="" />
+              <p>
+                Các kiểu đá gà luôn đa dạng và đã có từ lâu được xem là một trò
+                chơi cá cược dân gian. Đây là một hình thức giải trí và cá cược
+                mang tính cạnh tranh cao, thu hút nhiều người yêu thích và tham
+                gia. Tùy theo văn hóa và phong tục của từng […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              Đá gà 888B – Địa điểm chọi gà trực tuyến hàng đầu
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG TƯ 2, 2024 BY TẤN NHẸ CÂN
+            </p>
+
+            <!-- img2 -->
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan2.jpg" alt="" />
+              <p>
+                Đá gà 888B được biết đến là địa điểm cá cược trực tuyến uy tín,
+                an toàn và đa dạng. Bạn có thể tham gia vào nhiều trò chơi hấp
+                dẫn, giải trí và kiếm tiền thật. 888B luôn tự hào đứng vị trí
+                hàng đầu trong lĩnh vực cá cược trực tuyến vì độ […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              Khuyến mãi mới nhất tại 888B siêu hot được được cập nhật
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG MỘT 12, 2024 BY TẤN NHẸ CÂN
+            </p>
+
+            <!-- img3 -->
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan3.jpg" alt="" />
+              <p>
+                Chương trình khuyến mãi mới nhất tại 888B đặc biệt để tri ân
+                những khách hàng thân thiết của nhà cái. Bạn đã sẵn sàng đón
+                nhận hàng loạt ưu đãi hấp dẫn từ 888B chưa? Các chương trình
+                khuyến mãi rất phong phú và vô tận, bao gồm những món quà hào
+                phóng cho […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              5 mẹo tránh bẫy nhà cái dành cho tân thủ
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG BẢY 31, 2023 BY TẤN NHẸ CÂN
+            </p>
+
+            <!-- img4 -->
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan4.jpg" alt="" />
+              <p>
+                Nếu bạn muốn trở thành một cao thủ chơi cá cược giỏi trên mạng
+                thì ngoài việc dành nhiều thời gian nghiên cứu và triển khai bạn
+                cần phải nắm được thêm mẹo tránh bẫy nhà cái. Đây là điều vô
+                cùng cần thiết để tránh bạn mất tiền oan ức. Tìm hiểu thêm về
+                […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              Cách đánh lô đề miền Bắc siêu chuẩn dành cho người mới
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG SÁU 30, 2023 BY TẤN NHẸ CÂN
+            </p>
+
+            <!-- img5 -->
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan5.jpg" alt="" />
+              <p>
+                Đánh đề miền Bắc siêu chuẩn là một quá trình phức tạp và không
+                thể đảm bảo 100% thành công. Để tăng tỷ lệ thắng, bạn chỉ còn
+                cách đánh thật nhiều để rút ra kinh nghiệm cho bản thân. Dưới
+                đây là một số tổng hợp cách đánh lô đề miền Bắc cơ bản […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              Lưu ý khi đánh lô để tăng tỷ lệ trúng, đảm bảo an toàn
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG SÁU 25, 2023 BY TẤN NHẸ CÂN
+            </p>
+            <!-- img 7 -->
+
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan7.jpg" alt="" />
+              <p>
+                Việc đánh lô là một hình thức đánh bạc may rủi, chủ yếu dựa vào
+                may mắn cá nhân. Do đó không có cách nào chắc chắn để tăng tỷ lệ
+                trúng 100%. Tuy nhiên, có một số lưu ý và chiến lược có thể giúp
+                bạn tối đa hóa cơ hội chiến thắng. Một […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              Tổng hợp những cách đánh lô chuẩn tới 99% từ cao thủ
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG SÁU 18, 2023 BY TẤN NHẸ CÂN
+            </p>
+
+            <!-- img8 -->
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan8.jpg" alt="" />
+              <p>
+                Đánh lô đề là một bộ môn vô cùng tốn thời gian và chất xám, tuy
+                nhiên nó đem lại cảm giác hứng thú cho rất nhiều người. Để chơi
+                tốt bộ môn này, ngoài việc dựa vào may mắn cá nhân thì người
+                chơi nên bỏ túi cách đánh lô chuẩn để nâng cao […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-[11px] text-gray-300">HƯỚNG DẪN</p>
+            <h1
+              class="text-[#F2B437] font-bold text-xl md:text-2xl px-10 md:px-0 text-center"
+            >
+              Hướng dẫn chơi bắn cá online hay nhất từ các cao thủ
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-[11px] text-gray-300 uppercase">
+              POSTED ON THÁNG MỘT 19, 2023 BY QUẢN TRỊ WEB
+            </p>
+
+            <!-- img9 -->
+
+            <div
+              class="py-3 space-y-5 flex flex-col justify-center items-center"
+            >
+              <img class="w-full" src="./images/houng-dan9.jpg" alt="" />
+              <p>
+                Hướng dẫn chơi bắn cá online được chia sẻ dưới đây sẽ giúp bạn
+                nhanh chóng tạo tài khoản chơi game. Thông tin trong bài này
+                888B hướng dẫn người chơi một cách chi tiết nhất giúp bạn rinh
+                về những phần thưởng hậu hĩnh. Ưu điểm khi chơi game bắn cá
+                online ăn tiền […]
+              </p>
+              <button
+                class="hover:bg-[#446084] hover:border-[#446084] hover:text-white transition-all duration-500 border-blue-400 text-blue-400 text-[12px] px-4 py-[6px] border"
+              >
+                CONTINUE READING →
+              </button>
+              <br />
+              <div
+                class="flex items-center justify-between py-2 text-xs border-white border-t border-b w-full"
+              >
+                <p>Posted in Hướng dẫn</p>
+                <p>Leave a comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-[24%] space-y-4 lg:pl-8">
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Posts
+          </h1>
+
+          <p>Bật mí cách hoá giải vận đen hiệu quả trong cá độ online</p>
+
+          <p>Cách bắn cá thắng dễ hiểu và nhanh nhất để giành chiến thắng</p>
+
+          <p>Giải mã: mơ thấy mưa là điềm gì, tốt hay xấu? Số liên quan</p>
+
+          <p>Hướng dẫn cách chơi cá độ bóng đá từ A đến Z cho người mới</p>
+
+          <p>Tổng hợp các cách chơi bắn cá phát lộc hiệu quả tại 888B</p>
+
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Comments
+          </h1>
+
+          <p>Không có bình luận nào để hiển thị.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-[#0F4270] py-8">
+      <div
+        class="text-white max-w-[1050px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-9 px-4 xl:px-0"
+      >
+        <div class="space-y-2">
+          <h1 class="font-bold">GIỚI THIỆU VỀ 888B</h1>
+
+          <p class="w-7 border border-gray-400"></p>
+
+          <p class="pt-1">
+            888b – Nhà cái uy tín, đẳng cấp nhất châu Á năm 2024. Đăng ký hội
+            viên 888b tại trang web chính thức: 888b.tokyo nhận nhiều ưu đãi, hỗ
+            trợ 24/7 và nhiều phần quá giá trị đang chờ bạn.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THEO DÕI 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Youtube</p>
+          <p class="pt-1">Pinterest</p>
+          <p class="pt-1">Vimeo</p>
+          <p class="pt-1">Flickr</p>
+          <p class="pt-1">Linkedin</p>
+          <p class="pt-1">Tumblr</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THÔNG TIN VỀ 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Giới thiệu</p>
+          <p class="pt-1">Chính sách</p>
+          <p class="pt-1">Điều khoản</p>
+          <p class="pt-1">Cá cược có trách nhiệm</p>
+          <p class="pt-1">Liên hệ</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">TỪ KHÓA TÌM KIẾM</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">
+            <a href="https://888b.tokyo">https://888b.tokyo</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#0A0A0A] pt-5 pb-7 space-y-6">
+      <p
+        class="font-bold text-white hover:text-red-600 transition-all duration-200 text-center text-sm"
+      >
+        Nhận mã bảo mật
+      </p>
+      <p class="text-gray-400 text-center text-sm">
+        Bản quyền thuộc về © 888b.tokyo
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

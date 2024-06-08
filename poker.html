@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logotitle.jpg">
+    <title>poker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-[#1A1818]">
+    <!-- navbar -->
+    <div
+      class="widht h-screen fixed z-30 lg:hidden bg-gray-700 inset-0 bg-opacity-70"
+    >
+      <div
+        onclick="handleHide()"
+        class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <div class="w-[65%] md:w-[34%] h-full bg-[#0D1221]">
+        <div class="flex items-center pt-16 pl-5">
+          <input
+            placeholder="Seach..."
+            type="search"
+            class="text-gray-600 h-10 w-8/12 px-2 focus:outline-none bg-white"
+          />
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <div
+              class="w-10 h-10 bg-orange-400 flex items-center justify-center text-2xl"
+            >
+              <ion-icon class="text-white" name="search-outline"></ion-icon>
+            </div>
+          </a>
+        </div>
+
+        <ul class="font-semibold text-gray-600 *:text-white pt-3">
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> 888B </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              TẢI APP 888B
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              HƯỚNG DẪN
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              KHUYẾN MẠI
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              CASINO ONLINE
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              SLOT GAME
+            </a>
+          </li>
+        </ul>
+
+        <div
+          class="pt-5 flex space-x-3 items-center *:text-2xl text-white pl-4"
+        >
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="fixed w-full z-10">
+      <div class="bg-[#141414] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-[2px]"
+        >
+          <div class="font-bold text-white text-xs">
+            <h1>TRẢI NGHIỆM CHẤT LƯỢNG HÀNG ĐẦU!</h1>
+          </div>
+          <div class="flex space-x-4 items-center py-[2px]">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                + ĐĂNG KÝ
+              </button>
+            </a>
+
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                ĐĂNG NHẬP
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#191919] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-2"
+        >
+          <div>
+            <img class="w-40" src="./images/logo.webp" alt="" />
+          </div>
+          <div class="*:font-bold space-x-4">
+            <a href="https://www.hay88.one/?inviteCode=7599813" class="text-white"> 888B </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              TẢI APP 888B
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              HƯỚNG DẪN
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              KHUYẾN MẠI
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              CASINO ONLINE
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              SLOT GAME
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- sm menu -->
+      <div class="w-full lg:hidden">
+        <div
+          class="flex space-x-4 items-center justify-center py-[6px] bg-[#141414]"
+        >
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              + ĐĂNG KÝ
+            </button>
+          </a>
+
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              ĐĂNG NHẬP
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="text-white flex justify-between items-center px-4 py-2 bg-[#191919]"
+        >
+          <!-- clickNav -->
+          <div onclick="handleShow()" class="text-3xl">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+          <div><img class="w-44" src="./images/logo.webp" alt="" /></div>
+          <div class="pl-8"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div
+      class="text-white max-w-[1050px] mx-auto py-6 pb-24 space-y-10 px-4 xl:px-0 pt-36"
+    >
+      <div class="w-full lg:flex ">
+        <div class="w-full lg:w-[76%] lg:border-r border-gray-300 space-y-6">
+          <div class="flex flex-col items-center justify-center space-y-4 lg:pr-8">
+            <p class="font-bold text-xs text-gray-300">CASINO ONLINE</p>
+            <h1 class="font-bold  text-xl md:text-2xl  px-10 md:px-0 text-center">
+              Poker là gì ? Luật chơi, cách chơi Poker giỏi
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-xs text-gray-300 uppercase">
+              POSTED ON THÁNG MỘT 13, 2023 BY QUẢN TRỊ WEB
+            </p>
+
+            <div>
+              <img class="w-full" src="./images/poker.jpg" alt="" />
+            </div>
+
+            <p>
+              <span class="font-bold">Poker</span> là một trong những trò chơi
+              có lượng người tham gia lớn nhất hiện nay. Bạn hãy cùng tham khảo
+              ngay các hướng dẫn mà <span class="font-bold">888b</span> bật mí
+              dưới đây để có thể bắt đầu ngay từ hôm nay nhé.
+            </p>
+          </div>
+
+          <div class="pt-5 lg:pr-8 space-y-6">
+            <div class="bg-[#232323] w-[85%] md:w-[45%] lg:w-[45%] p-4 space-y-2">
+
+              <h4 class="text-[#F2B437] font-bold">
+                Danh mục [<span class="font-normal text-xs"> ẩn </span>]
+              </h4>
+
+              <ul class="space-y-2 text-[#F2B437] text-sm">
+                <li class="">1 Hướng dẫn chơi Poker tại nhà cái 888b</li>
+                <li>2 Poker là gì ?</li>
+                <li class="space-y-2">3 Luật chơi Poker mới nhất 2021</li>
+                <li class="space-y-2">
+                  4 Cách chơi Poker giỏi từ chuyên gia 888b
+                </li>
+                <li class="space-y-2">5 Lời kết</li>
+              </ul>
+            </div>
+
+            <h1 class="font-bold  text-xl md:text-2xl  text-[#F2B437]">
+              Hướng dẫn chơi Poker tại nhà cái 888b
+            </h1>
+
+            <p>Hướng dẫn chơi Poker tại nhà cái 888b</p>
+
+            <h1 class="font-bold  text-xl md:text-2xl  text-[#F2B437]">Poker là gì ?</h1>
+
+            <p>
+              Poker đến Việt Nam được thời gian khá nhau nhưng lượng người chơi
+              vẫn vô cùng lớn. Bởi trò chơi này có luật định không quá gắt gao
+              mà còn tạo nhiều cơ hội ăn tiền cho các game thủ. Chính vì thế,
+              nếu như bạn đang cần có một trò chơi vui thú để giải trí và nâng
+              cao kinh tế cho mình thì đây chính là lựa chọn hoàn hảo.
+            </p>
+
+            <p>
+              Nghe tên có thể nhiều người khó hiểu nhưng khi tìm hiểu các thông
+              tin dưới đây bạn sẽ thấy vô cùng thân quen đó ạ. Bởi poker thực
+              chất là một trò chơi bài mà ở đó người tham gia sẽ được chia số
+              quân bài nhất định. Điểm khác biệt là người chơi sẽ không được mở
+              2 lá bài đó và phải tiến hành cược. Nếu như bạn cược đúng thì sẽ
+              được ăn tiền lớn và ngược lại.
+            </p>
+
+            <p>
+              Trong số các hình thức pocker thì Hold Poker như trên được nhiều
+              người lựa chọn hơn cả. Người chơi cũng có thể kết hợp các lá bài
+              để được ăn pot ăn pé. Các hình thức chơi khác có vẻ phức tạp hơn
+              như Poker Texas Hold’em no limit nhưng tựu chung lại, các hình
+              thức pocker đều có chung một luật định. Để có thể tham gia, bạn
+              nên nắm chắc các điều sau để có thể sẵn sàng chinh phụ dù có các
+              biến thể trò chơi như thế nào.
+            </p>
+
+            <h1 class="font-bold  text-xl md:text-2xl  text-[#F2B437]">
+              Luật chơi Poker mới nhất 2021
+            </h1>
+
+            <div>
+              <p>Cách chơi Poker giỏi từ chuyên gia 888b</p>
+
+              <p>
+                Mỗi người chơi poker sẽ được chia 2 lá bài. Sau đó, 5 lá bài
+                chung được phân tiếp ở vòng kế theo. Như vậy, tổng số bài người
+                chơi được nhân là 5 chung cộng với 2 lá bài trên tay để có thể
+                phối với nhau tạo ra bộ mạnh nhất có thể.
+              </p>
+            </div>
+
+            <p>
+              Tuy nhiên, nhiều người khi chơi lại không biết cách kết hợp 2 hay
+              3 lá bài với nhau nên dẫn tới các vòng chia bài, preflop, flop,
+              turn, river đều không có được cơ hội ăn tiền. Nói vậy bạn có thể
+              hiểu rằng, poker được chia thành 4 vòng đặt cược. Mỗi vòng, người
+              chơi có quyền bet/raise, fold hoặc check/call.
+            </p>
+
+            <p class="font-bold">
+              Trải nghiệm nhiều trò chơi hấp dẫn khác tại Casino Online
+            </p>
+
+            <h1 class="font-bold  text-xl md:text-2xl  text-[#F2B437]">
+              Cách chơi Poker giỏi từ chuyên gia 888b
+            </h1>
+
+            <p>
+              Như đã phân tích, pocker là một trong những bộ môn game rất phong
+              phú đa dạng và có nhiều vòng khác nhau. Mỗi một vòng, người chơi
+              cần phải thực sự thông thái để có thể kết hợp chơi đánh cược và
+              mang về nhiều cơ hội chiến thắng cho mình.
+            </p>
+
+            <p>
+              <span class="font-bold">Tại vòng 1: </span> Người chơi được chia 2
+              lá bài bí ẩn. 2 lá bài này được nhà cái phân chia và bạn cần phải
+              giữ lại để có thể kết hợp được với các lá bài khác một cách hợp
+              lý. Bạn có thể cược ít hoặc nhiều cho 2 lá bài này dựa theo dự cảm
+              và tính toán của mình. Đó có thể là 1$, 2$,…
+            </p>
+
+            <p>
+              <span class="font-bold">Tại vòng 2: </span> Người chơi nhận tiếp 3
+              lá bài chung đầu tiên. Lúc này, trên bàn, bạn đã được sở hữu 5 lá
+              bài. Trong đó có 2 lá bài riêng và 3 bài chung. Bạn sẽ chia ra tỷ
+              lệ làm sao để cược cho chuẩn và hạn chế tối đa rủi roc ho mình.
+            </p>
+
+            <p>
+              <span class="font-bold">Tại vòng 3: </span> Vì 2/3 số người chơi
+              đã bị rớt nên bạn sẽ chỉ còn lại ít đối thủ. Tuy nhiên, đầy đều là
+              những đối thủ đáng gờm, bạn nên dè chừng nhé để cược cho chuẩn.
+            </p>
+
+            <p>
+              <span class="font-bold">Tại vòng 4, </span> tiếp tục 2 lá bài
+              chung được chia ra và việc của bạn là kết hợp lá bài này với các
+              lá bài chung riêng theo một nguyên tắc nào đó để có thể nâng cao
+              tối đa cơ hội chiến thắng cho mình.
+            </p>
+
+            <p>
+              Khi đã kết hợp các lá bài như trên và nhấn ok, nhà cái sẽ bắt đầu
+              tiến hành lật. Nếu như bạn đúng như bạn dự tính và đặt cược thì số
+              tiền cược từ các thành viên chơi sẽ được dồn về tổng tài khoản của
+              bạn. Đó là lý do vì sao chơi pocker có cơ hội nhận tiền thưởng cực
+              lớn.
+            </p>
+
+            <p>
+              Tuy nhiên, để đạt được kết quả này, người chơi cần phải thực sự
+              tỉnh táo, quyết tâm và tập trung 100%. Không nên vừa chơi vừa làm
+              việc xung quanh để cho quá trình tính toán, kết hợp các lá bài của
+              bạn bị sai hướng, dẫn tới mất đi tiền thưởng lớn. Hãy đặt toàn bộ
+              niềm tin và lý trí cho việc chơi pocker, chắc chắn, bạn sẽ có cơ
+              hội cải thiện cuộc đời.
+            </p>
+
+            <p>
+              Đặc biệt, hãy liên tục cập nhật thêm các chiến thuật chơi pocker
+              của các đàn anh đi trước tại các diễn đàn. Đó mới thực sự là những
+              thông tin cần thiết nhất giúp bạn có thể ứng dụng vào quá trình
+              chơi nhanh chóng và có cơ hội mang tiền thưởng ngay từ những lần
+              đầu tiên tham gia.
+            </p>
+
+            <p>
+              Hãy nhớ, dù trong bất kỳ vòng nào, bối cảnh nào, bạn cũng không
+              được cược tiền hết vào một lần chơi. Hãy chia nhỏ số tiền đó cho
+              các vòng để có thể giữ được thế an toàn nhất cho mình. Bởi không
+              ai nói trước được vận đen đỏ, bạn nên có sự dự phòng tài khoản để
+              quá trình chơi của mình không bị giãn đoạn.
+            </p>
+
+            <p class="font-bold">Xem thêm: Rồng hổ</p>
+
+            <h1 class="font-bold  text-xl md:text-2xl  text-[#F2B437]">Lời kết</h1>
+
+            <p>
+              Hy vọng với chia sẻ trên, bạn đã hiểu rõ hơn về trò chơi pocker và
+              đưa ra được hướng đi tốt nhất có thể cho mình. Chúc bạn may mắn và
+              ẵm được nhiều tiền thưởng có giá trị để thay đổi cuộc sống của
+              chính mình.
+            </p>
+
+            <!-- line container -->
+
+            <div class="space-y-4">
+              <p class="mx-auto w-8 border border-gray-400"></p>
+              <div class="flex items-center justify-center space-x-4">
+                <ion-icon
+                  name="logo-facebook"
+                  class="text-2xl  p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-twitter"
+                  class="text-2xl  p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-linkedin"
+                  class="text-2xl  p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-pinterest"
+                  class="text-2xl  p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="mail-outline"
+                  class="text-2xl  p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <div
+                class="py-3 w-full border-b border-t text-center text-sm border-gray-400"
+              >
+                This entry was posted in Casino Online. Bookmark the permalink.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-[24%] space-y-4 lg:pl-8">
+          <h1 class="font-bold  text-xl md:text-2xl  text-[#F2B437]">Recent Posts</h1>
+
+          <p>Bật mí cách hoá giải vận đen hiệu quả trong cá độ online</p>
+
+          <p>Cách bắn cá thắng dễ hiểu và nhanh nhất để giành chiến thắng</p>
+
+          <p>Giải mã: mơ thấy mưa là điềm gì, tốt hay xấu? Số liên quan</p>
+
+          <p>Hướng dẫn cách chơi cá độ bóng đá từ A đến Z cho người mới</p>
+
+          <p>Tổng hợp các cách chơi bắn cá phát lộc hiệu quả tại 888B</p>
+
+          <h1 class="font-bold  text-xl md:text-2xl  text-[#F2B437]">Recent Comments</h1>
+
+          <p>Không có bình luận nào để hiển thị.</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- footer -->
+     <div class="bg-[#0F4270] py-8">
+      <div
+        class="text-white max-w-[1050px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-9 px-4 xl:px-0"
+      >
+        <div class="space-y-2">
+          <h1 class="font-bold">GIỚI THIỆU VỀ 888B</h1>
+
+          <p class="w-7 border border-gray-400"></p>
+
+          <p class="pt-1">
+            888b – Nhà cái uy tín, đẳng cấp nhất châu Á năm 2024. Đăng ký hội
+            viên 888b tại trang web chính thức: 888b.tokyo nhận nhiều ưu đãi, hỗ
+            trợ 24/7 và nhiều phần quá giá trị đang chờ bạn.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THEO DÕI 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Youtube</p>
+          <p class="pt-1">Pinterest</p>
+          <p class="pt-1">Vimeo</p>
+          <p class="pt-1">Flickr</p>
+          <p class="pt-1">Linkedin</p>
+          <p class="pt-1">Tumblr</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THÔNG TIN VỀ 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Giới thiệu</p>
+          <p class="pt-1">Chính sách</p>
+          <p class="pt-1">Điều khoản</p>
+          <p class="pt-1">Cá cược có trách nhiệm</p>
+          <p class="pt-1">Liên hệ</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">TỪ KHÓA TÌM KIẾM</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1"><a href="https://888b.tokyo">https://888b.tokyo</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#0A0A0A] pt-5 pb-7 space-y-6">
+      <p
+        class="font-bold text-white hover:text-red-600 transition-all duration-200 text-center text-sm"
+      >
+        Nhận mã bảo mật
+      </p>
+      <p class="text-gray-400 text-center text-sm">
+        Bản quyền thuộc về © 888b.tokyo
+      </p>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>

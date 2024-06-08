@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logotitle.jpg" />
+    <title>Rồng hổ</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-[#1A1818]">
+    <!-- navbar -->
+    <div
+      class="widht h-screen fixed z-30 lg:hidden bg-gray-700 inset-0 bg-opacity-70"
+    >
+      <div
+        onclick="handleHide()"
+        class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <div class="w-[65%] md:w-[34%] h-full bg-[#0D1221]">
+        <div class="flex items-center pt-16 pl-5">
+          <input
+            placeholder="Seach..."
+            type="search"
+            class="text-gray-600 h-10 w-8/12 px-2 focus:outline-none bg-white"
+          />
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <div
+              class="w-10 h-10 bg-orange-400 flex items-center justify-center text-2xl"
+            >
+              <ion-icon class="text-white" name="search-outline"></ion-icon>
+            </div>
+          </a>
+        </div>
+
+        <ul class="font-semibold text-gray-600 *:text-white pt-3">
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> 888B </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              TẢI APP 888B
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> HƯỚNG DẪN </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> KHUYẾN MẠI </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              CASINO ONLINE
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> SLOT GAME </a>
+          </li>
+        </ul>
+
+        <div
+          class="pt-5 flex space-x-3 items-center *:text-2xl text-white pl-4"
+        >
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="fixed w-full z-10">
+      <div class="bg-[#141414] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-[2px]"
+        >
+          <div class="font-bold text-white text-xs">
+            <h1>TRẢI NGHIỆM CHẤT LƯỢNG HÀNG ĐẦU!</h1>
+          </div>
+          <div class="flex space-x-4 items-center py-[2px]">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                + ĐĂNG KÝ
+              </button>
+            </a>
+
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                ĐĂNG NHẬP
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#191919] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-2"
+        >
+          <div>
+            <img class="w-40" src="./images/logo.webp" alt="" />
+          </div>
+          <div class="*:font-bold space-x-4">
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="text-white"
+            >
+              888B
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              TẢI APP 888B
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              HƯỚNG DẪN
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              KHUYẾN MẠI
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              CASINO ONLINE
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              SLOT GAME
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- sm menu -->
+      <div class="w-full lg:hidden">
+        <div
+          class="flex space-x-4 items-center justify-center py-[6px] bg-[#141414]"
+        >
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              + ĐĂNG KÝ
+            </button>
+          </a>
+
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              ĐĂNG NHẬP
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="text-white flex justify-between items-center px-4 py-2 bg-[#191919]"
+        >
+          <!-- clickNav -->
+          <div onclick="handleShow()" class="text-3xl">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+          <div><img class="w-44" src="./images/logo.webp" alt="" /></div>
+          <div class="pl-8"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- container -->
+
+    <div class="text-white max-w-[1050px] mx-auto py-6 pb-24 space-y-10 px-4 xl:px-0 pt-36">
+      <div class="w-full lg:flex">
+        <div class="lg:w-[76%] lg:border-r border-gray-300 space-y-6">
+          <div
+            class="flex flex-col items-center justify-center space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-xs text-gray-300">CASINO ONLINE</p>
+            <h1 class="font-bold text-xl md:text-2xl px-10 md:px-0 text-center">
+              Rồng hổ là gì ? Luật chơi, cách chơi rồng hổ giỏi
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-xs text-gray-300 uppercase">
+              POSTED ON THÁNG MỘT 13, 2023 BY QUẢN TRỊ WEB
+            </p>
+
+            <div>
+              <img class="w-full" src="./images/rong-ho.jpg" alt="" />
+            </div>
+
+            <p>
+              <span class="font-bold">Rồng hổ</span> là một trong những trò chơi
+              dễ thắng đang được rất nhiều người quan tâm. Rồng Hổ là gì ? Luật
+              chơi mới nhất 2020, cách chơi Rồng Hồ giỏi từ chuyên gia nhà cái
+              888b được bật mí trong nội dung bài viết này.
+            </p>
+          </div>
+
+          <div class="pt-5 lg:pr-8 space-y-6">
+            <div
+              class="bg-[#232323] w-[93%] md:w-[45%] lg:w-[45%] p-4 space-y-2"
+            >
+              <h4 class="text-[#F2B437] font-bold">
+                Danh mục [<span class="font-normal text-xs"> ẩn </span>]
+              </h4>
+
+              <ul class="space-y-2 text-[#F2B437] text-sm">
+                <li class="">1 Hướng dẫn chơi rồng hổ tại nhà cái 888b</li>
+                <li>2 Rồng Hổ là gì ?</li>
+                <li>3 Các thuật ngữ cần biết khi chơi Rồng Hổ</li>
+                <li>4 Luật chơi Rồng Hổ mới nhất 2021</li>
+                <li class="space-y-2">
+                  <p>5 Cách chơi Rồng Hổ giỏi từ chuyên gia 888b</p>
+                  <div class="space-y-2 pl-4">
+                    <p>5.1 Phân chia tiền cược hợp lý</p>
+                    <p>5.2 Biết điểm dừng</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Hướng dẫn chơi rồng hổ tại nhà cái 888b
+            </h1>
+
+            <div>
+              <p>Hướng dẫn chơi rồng hổ tại nhà cái 888b</p>
+              <div class=" ">
+                <img src="./images/rong-ho.jpg" class="w-full" alt="" />
+              </div>
+              <p>Rồng hổ</p>
+              <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+                Rồng Hổ là gì ?
+              </h1>
+            </div>
+
+            <p>
+              Rồng hồ vốn là một trò chơi được xuất phát từ đất nước Campuchia.
+              Chúng còn được biết tới với các tên khác như Dragon Tiger. Đây là
+              một trong những trò chơi đánh bài nổi tiếng khắp Châu Á và đang
+              thịnh hành tại đất nước ta.
+            </p>
+
+            <p>
+              Nếu nói về sự đầu tư giá trị, rồng hổ là game đứng top đầu Bởi mức
+              cược có thể lên tới 50 điểm và tương ứng với 50 triệu tiền việt.
+              Do đó, nếu như bạn là người muốn mạo hiểm, đánh lớn thì đây chính
+              là lựa chọn hoàn hảo.
+            </p>
+
+            <p>
+              Đặc biệt, những ai tham gia trò chơi này sẽ thấy vô cùng hấp dẫn,
+              càng chơi càng thích. Bởi sự phân định thắng thua được tính dựa
+              vào các quân bài, người chơi không cần phải tính toán quá nhiều.
+              Ai có được bài lớn hơn thì người đó ăn tiền. Sau khi thắng, nhà
+              cái sẽ chuyển khoản tiền thưởng ngay vào thẻ. Bạn có thể rút trong
+              vòng 24h và tiếp tục tạo đà cho những lần chơi tiếp theo.
+            </p>
+
+            <p>
+              Bạn có thể rút qua thẻ ATM, ví điện tử Momo hay bất kì hình thức
+              kết nối nào khác. Bởi các nhà cái cung cấp trò chơi rồng hổ đã tạo
+              ra một giao diện cực chuyên nghiệp và hỗ trợ khách hàng tối đa. Đa
+              số các ngân hàng đều được liên kết nên việc rút nạp tiền khi chơi
+              trở nên vô cùng dễ dàng.
+            </p>
+
+            <p>
+              Bằng những ưu thế hiện có, rồng hổ được xem là một món ăn tinh
+              thần đối với các nhà cái và người chơi. Vì thế, bạn nên tìm hiểu
+              ngay các thuật ngữ, luật chơi, cách chơi để có thể bắt tay ngay
+              nhé.
+            </p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Các thuật ngữ cần biết khi chơi Rồng Hổ
+            </h1>
+
+            <div>
+              <p>
+                Các thuật ngữ cần biết khi chơi Rồng HổCác thuật ngữ cần biết
+                khi chơi Rồng Hổ
+              </p>
+              <p>
+                Rồng hổ được quy định ra khá nhiều các thuật ngữ để tạo ra
+                chuyên nghiệp hơn cho bộ game này. Vì thế, khi tham gia, để
+                tránh xảy ra bỡ ngỡ, ngay từ đầu, bạn cần nắm rõ các thuật ngữ
+                sau.
+              </p>
+            </div>
+
+            <ul class="pl-5 list-disc space-y-3">
+              <li>
+                Dealer là cụm từ dùng để chỉ người đại diện cho nhà cái và đứng
+                ra chia bài.
+              </li>
+              <li>Dragon được tô đậm bằng màu đỏ và ký hiệu cho cửa rồng.</li>
+              <li>Tiger được tô đậm bằng màu xanh và ký hiệu cho cửa hổ.</li>
+
+              <li>Tie là cửa hòa và được nổi bật với màu xanh lá.</li>
+            </ul>
+
+            <p>
+              Bộ Rồng hổ này được phân chia giá trị khác nhau dựa vào các quân
+              bài. Thông thường, bộ bài sẽ gồm có các số từ 2 tới 10, A, J, Q,
+              K. Lá bài thấp nhất là A, cao nhất là K
+            </p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Luật chơi Rồng Hổ mới nhất 2021
+            </h1>
+
+            <p>
+              Khi chơi rồng hổ, người chơi sẽ được dealer chia cho số lá bài
+              nhất định. Sau so sánh và tính tổng các lá bài đó, lá bài của ai
+              cao hơn thì người đó giành được phần thưởng.
+            </p>
+
+            <p>
+              Rồng và Hổ cùng điểm số sẽ được quy đổi ra hòa. Người chơi mất đi
+              50% tiền cược cho nhà cái. Nghiễm nhiên, trong trường hợp bạn
+              thắng thì phần thưởng nhận về sẽ là 100%. Đặc biệt, trò chơi này
+              không thu bất kì khoản lợi nhuận hoa hồng nào nên nếu như chiến
+              thắng thì bạn sẽ nhận toàn bộ số tiền có được.
+            </p>
+
+            <p>
+              Nếu như cược hòa, tỷ lệ thắng thường là 8:1. Nghĩa là, nếu bạn đặt
+              cược 1 thì bạn sẽ được nhân lên 8 khi thắng. Nếu như cược lớn, bạn
+              đặt cược vào kết quả mà tổng điểm nhận được cao hơn 8 thì sẽ được
+              nhần tiền thưởng rất lớn. Còn nếu như cược nhỏ, bạn sẽ đặt cược
+              tổng điểm đạt dưới 7, bao gồm các con bài A ,2,3,4,5,6. Ngoài ra,
+              bạn có thể đặt cược Suit. Đây là cách thức đặt cược nhiều người
+              lựa chọn và có tỷ lệ là 2:1.
+            </p>
+
+            <p class="font-bold">
+              Trải nghiệm nhiều trò chơi hấp dẫn khác tại Casino Online
+            </p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Cách chơi Rồng Hổ giỏi từ chuyên gia 888b
+            </h1>
+
+            <div>
+              <p>
+                Cách chơi Rồng Hổ giỏi từ chuyên gia 888bCách chơi Rồng Hổ giỏi
+                từ chuyên gia 888b
+              </p>
+
+              <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+                Phân chia tiền cược hợp lý
+              </h1>
+            </div>
+
+            <p>
+              Cược tiền khi chơi rồng hổ là một trong những vấn đề then chốt..
+              Bạn có thể đặt cược tiền lớn hoặc nhỏ dựa theo kinh nghiệm, năng
+              lực của mình. Nếu như bạn mới bắt đầu chơi rồng hổ và chưa rõ về
+              đường đi lối bước thì không nên cược quá nhiều.
+            </p>
+
+            <p>
+              Bạn chỉ cần chia nhỏ số tiền trong tài khoản cho mỗi lần chơi để
+              tạo ra được tâm thế chơi ổn định nhất cho mình. Khi nào bạn đã dày
+              dạn hơn và tự tin vào những lần chơi của mình thì có thể đánh cược
+              ván bài ù để nâng cao cơ hội nhận tiền thưởng cho mình.
+            </p>
+
+            <p class="font-bold">Xem thêm: Tài xỉu</p>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+              Biết điểm dừng
+            </h1>
+
+            <p>
+              Không ai may mắn hay đen mãi được nên khi chơi rồng hổ, bạn cần
+              phải có sự phân định thời gian chơi, số lần chơi cho mình. Một
+              ngày bạn chỉ nên chơi 2 – 3 lần dù thắng hay thua. Sau mỗi lần
+              chơi, bạn đúc rút lại kinh nghiệm để lần sau có được thế chơi tốt
+              hơn.
+            </p>
+
+            <p>
+              Có làm được như vậy, bạn mới không mắc phải các cạm bẫy được bày
+              ra từ nhiều nhà cái uy tín. Thực tế, có không ít game thủ chơi 3
+              lần thắng, lần thứ 4 chơi tiếp thì thua và về mất trắng. Như vậy,
+              chẳng phải, bạn đã quá uổng phí công sức và tiền thưởng của mình
+              hay sao.
+            </p>
+
+            <p>
+              Vì thế, hy vọng qua bài viết này, các bạn sẽ biết cách chơi rồng
+              hổ tốt hơn và mang về nhiều tiền thưởng cho mình.
+            </p>
+
+            <!-- line container -->
+
+            <div class="space-y-4">
+              <p class="mx-auto w-8 border border-gray-400"></p>
+              <div class="flex items-center justify-center space-x-4">
+                <ion-icon
+                  name="logo-facebook"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-twitter"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-linkedin"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-pinterest"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="mail-outline"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <div
+                class="py-3 w-full border-b border-t text-center text-sm border-gray-400"
+              >
+                This entry was posted in Casino Online. Bookmark the permalink.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-[24%] space-y-4 lg:pl-8">
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Posts
+          </h1>
+
+          <p>Bật mí cách hoá giải vận đen hiệu quả trong cá độ online</p>
+
+          <p>Cách bắn cá thắng dễ hiểu và nhanh nhất để giành chiến thắng</p>
+
+          <p>Giải mã: mơ thấy mưa là điềm gì, tốt hay xấu? Số liên quan</p>
+
+          <p>Hướng dẫn cách chơi cá độ bóng đá từ A đến Z cho người mới</p>
+
+          <p>Tổng hợp các cách chơi bắn cá phát lộc hiệu quả tại 888B</p>
+
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Comments
+          </h1>
+
+          <p>Không có bình luận nào để hiển thị.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-[#0F4270] py-8">
+      <div
+        class="text-white max-w-[1050px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-9 px-4 xl:px-0"
+      >
+        <div class="space-y-2">
+          <h1 class="font-bold">GIỚI THIỆU VỀ 888B</h1>
+
+          <p class="w-7 border border-gray-400"></p>
+
+          <p class="pt-1">
+            888b – Nhà cái uy tín, đẳng cấp nhất châu Á năm 2024. Đăng ký hội
+            viên 888b tại trang web chính thức: 888b.tokyo nhận nhiều ưu đãi, hỗ
+            trợ 24/7 và nhiều phần quá giá trị đang chờ bạn.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THEO DÕI 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Youtube</p>
+          <p class="pt-1">Pinterest</p>
+          <p class="pt-1">Vimeo</p>
+          <p class="pt-1">Flickr</p>
+          <p class="pt-1">Linkedin</p>
+          <p class="pt-1">Tumblr</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THÔNG TIN VỀ 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Giới thiệu</p>
+          <p class="pt-1">Chính sách</p>
+          <p class="pt-1">Điều khoản</p>
+          <p class="pt-1">Cá cược có trách nhiệm</p>
+          <p class="pt-1">Liên hệ</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">TỪ KHÓA TÌM KIẾM</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">
+            <a href="https://888b.tokyo">https://888b.tokyo</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#0A0A0A] pt-5 pb-7 space-y-6">
+      <p
+        class="font-bold text-white hover:text-red-600 transition-all duration-200 text-center text-sm"
+      >
+        Nhận mã bảo mật
+      </p>
+      <p class="text-gray-400 text-center text-sm">
+        Bản quyền thuộc về © 888b.tokyo
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Xóc đĩa</title>
+    <link rel="icon" href="./images/logotitle.jpg">
+  </head>
+  <body class="bg-[#1A1818]">
+    <!-- navbar -->
+    <div
+      class="widht h-screen fixed z-30 lg:hidden bg-gray-700 inset-0 bg-opacity-70"
+    >
+      <div
+        onclick="handleHide()"
+        class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <div class="w-[65%] md:w-[34%] h-full bg-[#0D1221]">
+        <div class="flex items-center pt-16 pl-5">
+          <input
+            placeholder="Seach..."
+            type="search"
+            class="text-gray-600 h-10 w-8/12 px-2 focus:outline-none bg-white"
+          />
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <div
+              class="w-10 h-10 bg-orange-400 flex items-center justify-center text-2xl"
+            >
+              <ion-icon class="text-white" name="search-outline"></ion-icon>
+            </div>
+          </a>
+        </div>
+
+        <ul class="font-semibold text-gray-600 *:text-white pt-3">
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> 888B </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              TẢI APP 888B
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> HƯỚNG DẪN </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> KHUYẾN MẠI </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              CASINO ONLINE
+            </a>
+          </li>
+          <li class="pb-4 border-b border-gray-700 pt-2 pl-5">
+            <a href="https://www.hay88.one/?inviteCode=7599813"> SLOT GAME </a>
+          </li>
+        </ul>
+
+        <div
+          class="pt-5 flex space-x-3 items-center *:text-2xl text-white pl-4"
+        >
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="fixed w-full z-10">
+      <div class="bg-[#141414] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-[2px]"
+        >
+          <div class="font-bold text-white text-xs">
+            <h1>TRẢI NGHIỆM CHẤT LƯỢNG HÀNG ĐẦU!</h1>
+          </div>
+          <div class="flex space-x-4 items-center py-[2px]">
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                + ĐĂNG KÝ
+              </button>
+            </a>
+
+            <a href="https://www.hay88.one/?inviteCode=7599813">
+              <button
+                class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-bold shadow text-white text-sm uppercase"
+              >
+                ĐĂNG NHẬP
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#191919] hidden lg:block lg:px-4 xl:px-0">
+        <div
+          class="max-w-[1050px] mx-auto flex justify-between items-center py-2"
+        >
+          <div>
+            <img class="w-40" src="./images/logo.webp" alt="" />
+          </div>
+          <div class="*:font-bold space-x-4">
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="text-white"
+            >
+              888B
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              TẢI APP 888B
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              HƯỚNG DẪN
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              KHUYẾN MẠI
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              CASINO ONLINE
+            </a>
+            <a
+              href="https://www.hay88.one/?inviteCode=7599813"
+              class="hover:text-white text-gray-300 transition-all duration-100"
+            >
+              SLOT GAME
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- sm menu -->
+      <div class="w-full lg:hidden">
+        <div
+          class="flex space-x-4 items-center justify-center py-[6px] bg-[#141414]"
+        >
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#EBB800] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              + ĐĂNG KÝ
+            </button>
+          </a>
+
+          <a href="https://www.hay88.one/?inviteCode=7599813">
+            <button
+              class="bg-[#CD0000] py-[7px] px-4 focus:outline-none font-semibold shadow text-white text-xs uppercase"
+            >
+              ĐĂNG NHẬP
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="text-white flex justify-between items-center px-4 py-2 bg-[#191919]"
+        >
+          <!-- clickNav -->
+          <div onclick="handleShow()" class="text-3xl">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+          <div><img class="w-44" src="./images/logo.webp" alt="" /></div>
+          <div class="pl-8"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container -->
+
+    <div
+      class="text-white max-w-[1050px] mx-auto py-6 pb-24 space-y-10 px-4 xl:px-0 pt-36"
+    >
+      <div class="w-full lg:flex">
+        <div class="w-full lg:w-[76%] lg:border-r border-gray-300 space-y-6">
+          <div
+            class="flex flex-col items-center justify-center space-y-3 md:space-y-4 lg:pr-8"
+          >
+            <p class="font-bold text-xs text-gray-300">CASINO ONLINE</p>
+            <h1
+              class="font-bold px-10 md:px-0 text-center text-xl md:text-2xl"
+            >
+              Xóc đĩa là gì ? Luật chơi, cách chơi xóc đĩa giỏi
+            </h1>
+            <p class="w-8 border border-gray-500"></p>
+            <p class="font-bold text-xs text-gray-300 uppercase">
+              POSTED ON THÁNG MỘT 13, 2023 BY QUẢN TRỊ WEB
+            </p>
+          </div>
+
+
+          
+
+          <div class="pt-5 lg:pr-8 space-y-6">
+
+            <div>
+              <img class="w-full" src="./images/xocdia.jpg" alt="" />
+            </div>
+
+            
+            <p class="">
+              <span class="font-bold">Xóc đĩa</span> là một trong những trò chơi
+              được rất nhiều game thủ lựa chọn, bởi chúng yêu cầu không quá cao.
+              Bạn chỉ cần nắm được luật chơi và cách chơi dưới đây đảm bảo sẽ
+              chơi đâu thắng đó và mang về nhiều tiền thưởng có giá trị.
+            </p>
+
+            <p>
+              Chơi xóc đĩa là một trong những thú vui của rất nhiều người. Tuy
+              nhiên, không phải ai cũng nắm bắt và giành được tiền thưởng từ trò
+              chơi này. Vì thế, 888B chia sẻ kinh nghiệm cho các bạn dưới đây để
+              có thể dễ dàng chơi và mang về nhiều tiền thưởng.
+            </p>
+
+            <div class="bg-[#232323] w-[92%] md:w-[45%] p-4 space-y-2">
+              <h4 class="text-[#F2B437] font-bold">
+                Danh mục [<span class="font-normal text-xs"> ẩn </span>]
+              </h4>
+
+              <ul class="space-y-2 text-[#F2B437] text-sm">
+                <li class="text-[#DCDE3A]">1 Xóc đĩa là gì ?</li>
+                <li>2 Luật chơi xóc đĩa</li>
+                <li class="space-y-2">
+                  <p>3 Bí kíp, kinh nghiệm cách chơi xóc đĩa giỏi</p>
+                  <div class="space-y-2 pl-4">
+                    <p>3.1 Bình tĩnh quan sát</p>
+                    <p>3.2 Đặt cược theo quy luật hên xui 50 – 50</p>
+                    <p>3.3 Nắm rõ các thuật ngữ xóc đĩa Online</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Xóc đĩa là gì ?
+            </h1>
+
+            <div>
+              <p>Xóc đĩa là gì ?</p>
+              <p>Xóc đĩa là gì ? Luật chơi, cách chơi xóc đĩa giỏi 2021</p>
+              <p>
+                Về cơ bản, xóc đĩa là một trò chơi đánh bạc khá phổ biến hiện
+                nay. Chúng được rất nhiều người lựa chọn vì có sức hấp dẫn vô
+                cùng lớn. Bộ dụng cụ cần thiết để sử dụng là một chiếc bát,
+                chiếc đĩa và đồng xu. Đồng xu này có thể là 1,2 hoặc 4 đồng có 2
+                màu khác nhau ở 2 mặt để dễ dàng nhận biết.
+              </p>
+            </div>
+
+            <p>
+              Người chơi sẽ tiến hành đặt cược theo một mức giới hạn được quy
+              định sẵn sau khi bỏ đồng xu vào đĩa. Hãy lắc sao cho không ai nhìn
+              được thấy chúng và ụp lại, mở kết quả để đọc xem mình thắng hay
+              thua. Đó là cách chơi truyền thống. Ngày nay, với sự phát triển
+              của khoa học công nghệ, hình thức chơi xóc đĩa online đã ra đời.
+              Bạn chỉ cần ngồi tại nhà, vào nhà cái và tìm tới trò chơi này là
+              mọi thao tác đã được ấn định sẵn. Bạn chỉ cần nhấn nút ok là được.
+            </p>
+
+            <p>
+              Tất cả người chơi sẽ tiến hành đặt cược theo một mức giới hạn theo
+              quy định. Một người sẽ tiến hành bỏ các đồng xu vào đĩa, úp bát
+              lại và lắc sao cho không ai có thể nhìn thấy chúng. Nhiệm vụ của
+              những người tham gia là dự đoán sự xuất hiện mặt ngửa các đồng xu
+              sau khi mở bát.
+            </p>
+
+            <p>
+              Cho dù đó là cách chơi xóc đĩa trên mạng hay ở ngoài tụ điểm cờ
+              bạc thì đều có thể nói là vô cùng đơn giản so với những trò cá
+              cược khác. Tùy số lượng của các đồng xu được sử dụng mà trò chơi
+              này có những cửa đặt cược khác nhau.
+            </p>
+
+            <p class="font-bold">Xem nhiều hơn tại: Casino Online</p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Luật chơi xóc đĩa
+            </h1>
+
+            <p>
+              Luật chơi xóc đĩa khá đơn giản. Dù bạn chơi online hay truyền
+              thống, người tham gia chỉ cần tiến hành đặt cược vào bát rồi tiến
+              hành tham gia phần xóc đĩa. Nếu như chơi truyền thống, đội tham
+              gia sẽ có một người đứng ra làm trọng tài và tiến hành làm xóc đĩa
+              hoặc mọi người cùng cử ra một thành viên để thực hiện luân phiên
+              công việc này. Còn nếu như bạn đánh online, nhà cái sẽ có ngay một
+              bộ phận dealer chuyên thực hiện xóc đĩa.
+            </p>
+
+            <p>
+              Nếu như xóc đĩa 1 đồng xu, người chơi chọn mặt sấp hoặc ngửa. Nếu
+              như bạn xóc đĩa 2 đồng xu, 3 cửa sẽ được mở ra, đó là cùng sấp,
+              cùng ngửa hoặc 1 sấp 1 ngửa. Nếu như xóc đĩa 4 đồng xu, nhiều cửa
+              đặt cược được đặt ra như chẵn lẻ, theo màu,…
+            </p>
+
+            <p class="font-bold">Cách trường hợp trong khi chơi xóc đĩa</p>
+
+            <ul class="pl-5 list-disc">
+              <li>4 đồng xu đều ngửa: Chẵn</li>
+              <li>3 đồng xu ngửa- 1 đồng xu sấp: Lẻ</li>
+
+              <li>2 đồng xu ngửa – 2 đồng xu sấp: Chẵn</li>
+
+              <li>1 đồng xu ngửa – 3 đồng xu sấp: Lẻ</li>
+
+              <li>4 đồng xu đều sấp: Chẵn</li>
+            </ul>
+
+            <p>Tại 888B, các đồng xu được hiển thị màu trắng và màu đỏ.</p>
+
+            <p>
+              Nếu như bạn dự đoán đúng thì sẽ được nhận tiền thưởng và ngược
+              lại. Vì thế, các bạn cần phải tính toán cẩn thận trước khi đưa ra
+              quyết định cho mình nhé.
+            </p>
+
+            <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+              Bí kíp, kinh nghiệm cách chơi xóc đĩa giỏi
+            </h1>
+            <p>Bí kíp, kinh nghiệm cách chơi xóc đĩa giỏi</p>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+              Bình tĩnh quan sát
+            </h1>
+
+            <p>
+              Yếu tố tiên quyết khi chơi đánh xóc đĩa chính là sự bình tĩnh. Yếu
+              tố này chiếm tới 80% kết quả nên các bạn hãy thực sự lưu ý nhé. Cụ
+              thể, khi chơi, bạn cần phải quan sát đối thủ để xem đối phương có
+              đang sử dụng các mánh khóe nào hay không.
+            </p>
+
+            <p>
+              Nhiều game thủ khi chơi không thực sự minh bạch, dùng các thủ
+              thuật khác nhau để có thể điều hướng kết quả theo hướng mong muốn
+              của mình. Vì thế, nếu như bạn không chú ý thì sẽ dễ mắc phải vòng
+              luân lý và liên tục phải nhận thua trước đối thủ. Hãy cẩn thận và
+              quan sát xem đối thủ ra sao từ đó có hướng đi chơi cho thực sự tốt
+              nhé.
+            </p>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+              Đặt cược theo quy luật hên xui 50 – 50
+            </h1>
+
+            <p>
+              Thay vì đánh cược 100% số tiền cho một mặt sấp hoặc một mặt ngửa,
+              bạn có thể tiến hành đánh 50 – 50 mặt sấp – mặt ngửa. Cách làm này
+              giúp cho bạn có được thế chơi an toàn và không lo bị mất vốn quá
+              nhiều nếu như thua cuộc. Bởi khi bạn không ném hết trứng vào một
+              giỏ, bạn sẽ thấy yên tâm hơn khi cược và có được tâm thế tốt nhất
+              có thể.
+            </p>
+
+            <p>
+              Cách làm này thường được áp dụng cho những game thủ mới bắt đầu
+              tham gia. Thậm chí những người đã có kinh nghiệm làm, nếu như bạn
+              chưa biết định hướng đánh ra sao thì việc cách thức chọn đánh 50 –
+              50 như thế này cũng là một phương án. Các bạn hoàn toàn có thể cân
+              nhắc và quyết định. Đánh chia đều như thế này, bạn đã có thể nắm
+              được 50% chiến thắng nên đừng ngần ngại gì cả. Hãy tự tin và đánh
+              cược nhé.
+            </p>
+
+            <h1 class="font-bold text-[19px] md:text-xl text-[#F2B437]">
+              Nắm rõ các thuật ngữ xóc đĩa Online
+            </h1>
+
+            <p>
+              Ngoài những điều trên, việc nắm chắc thuật ngữ cũng là điều cần
+              thiết. Vì thế, để có thể chơi tốt thì bạn nên hiểu rõ những điều
+              dưới đây nhé. Ví dụ, tài là 4 đỏ hoặc 1 trắng 3 đỏ. Xỉu là 3 trắng
+              1 đỏ hoặc 4 trắng. Chẵn là 2 đỏ 2 trắng hoặc 4 đỏ 4 trắng. Lẻ là 3
+              trắng 1 đỏ hoặc 1 trắng 3 đỏ.
+            </p>
+
+            <p>
+              Khi nắm chắc các thuật ngữ này, hiểu rõ cách chơi, luật chơi, đảm
+              bảo bạn sẽ chơi tài xỉu nhanh chóng, dễ thắng chưa từng thấy. Hãy
+              áp dụng thử xem sao để cải thiện tối đa kết quả chơi của mình nhé.
+            </p>
+
+            <!-- line container -->
+
+            <div class="space-y-4">
+              <p class="mx-auto w-8 border border-gray-400"></p>
+              <div class="flex items-center justify-center space-x-4">
+                <ion-icon
+                  name="logo-facebook"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-twitter"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-linkedin"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-pinterest"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+                <ion-icon
+                  name="mail-outline"
+                  class="text-2xl p-2 border border-gray-100 rounded-full"
+                ></ion-icon>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <div
+                class="py-3 w-full border-b border-t text-center text-sm border-gray-400"
+              >
+                This entry was posted in Casino Online. Bookmark the permalink.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-[24%] space-y-4 lg:pl-8">
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Posts
+          </h1>
+
+          <p>Bật mí cách hoá giải vận đen hiệu quả trong cá độ online</p>
+
+          <p>Cách bắn cá thắng dễ hiểu và nhanh nhất để giành chiến thắng</p>
+
+          <p>Giải mã: mơ thấy mưa là điềm gì, tốt hay xấu? Số liên quan</p>
+
+          <p>Hướng dẫn cách chơi cá độ bóng đá từ A đến Z cho người mới</p>
+
+          <p>Tổng hợp các cách chơi bắn cá phát lộc hiệu quả tại 888B</p>
+
+          <h1 class="font-bold text-xl md:text-2xl text-[#F2B437]">
+            Recent Comments
+          </h1>
+
+          <p>Không có bình luận nào để hiển thị.</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- footer -->
+     <div class="bg-[#0F4270] py-8">
+      <div
+        class="text-white max-w-[1050px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-9 px-4 xl:px-0"
+      >
+        <div class="space-y-2">
+          <h1 class="font-bold">GIỚI THIỆU VỀ 888B</h1>
+
+          <p class="w-7 border border-gray-400"></p>
+
+          <p class="pt-1">
+            888b – Nhà cái uy tín, đẳng cấp nhất châu Á năm 2024. Đăng ký hội
+            viên 888b tại trang web chính thức: 888b.tokyo nhận nhiều ưu đãi, hỗ
+            trợ 24/7 và nhiều phần quá giá trị đang chờ bạn.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THEO DÕI 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Youtube</p>
+          <p class="pt-1">Pinterest</p>
+          <p class="pt-1">Vimeo</p>
+          <p class="pt-1">Flickr</p>
+          <p class="pt-1">Linkedin</p>
+          <p class="pt-1">Tumblr</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">THÔNG TIN VỀ 888B</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1">Giới thiệu</p>
+          <p class="pt-1">Chính sách</p>
+          <p class="pt-1">Điều khoản</p>
+          <p class="pt-1">Cá cược có trách nhiệm</p>
+          <p class="pt-1">Liên hệ</p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-bold">TỪ KHÓA TÌM KIẾM</h1>
+          <p class="w-7 border border-gray-400"></p>
+          <p class="pt-1"><a href="https://888b.tokyo">https://888b.tokyo</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#0A0A0A] pt-5 pb-7 space-y-6">
+      <p
+        class="font-bold text-white hover:text-red-600 transition-all duration-200 text-center text-sm"
+      >
+        Nhận mã bảo mật
+      </p>
+      <p class="text-gray-400 text-center text-sm">
+        Bản quyền thuộc về © 888b.tokyo
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
